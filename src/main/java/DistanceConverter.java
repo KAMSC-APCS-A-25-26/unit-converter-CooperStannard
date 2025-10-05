@@ -37,7 +37,7 @@ public class DistanceConverter {
                     System.out.println("\nConversion Results: ");
                     System.out.println("Kilometers "+ distance);
                     distance /= 1.60935;
-                    System.out.println("Miles "+ distance);
+                    System.out.println("Miles: "+ distance);
                     break;
                 case 3:
                     System.out.println("Goodbye!");
