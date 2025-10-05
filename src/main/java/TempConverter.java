@@ -15,11 +15,11 @@ public class TempConverter {
 
         run = true;
         while (run){
-            System.out.println("----menu----");
+            System.out.println("\n----menu----");
             System.out.println("1. F to C");
             System.out.println("2. C to F");
             System.out.println("3. exit");
-            System.out.print("Enter your choice:  ");
+            System.out.print("\nEnter your choice:  ");
             int choice = sc.nextInt();
 
             switch (choice)
@@ -29,17 +29,17 @@ public class TempConverter {
                     temp = sc.nextDouble();
                     System.out.println("\nThe fahrenheit is "+ temp);
                     temp = (temp-32)*((double)5/9);
-                    System.out.println("\nThe celsius is "+ temp);
+                    System.out.println("The celsius is "+ temp);
                     break;
                 case 2:
                     System.out.print("\nEnter the Temp in celsius:  ");
                     temp = sc.nextDouble();
-                    System.out.println("\nThe celsius is "+ temp);
+                    System.out.println("The celsius is "+ temp);
                     temp = (temp*((double)9/5)+32);
                     System.out.println("\nThe fahrenheit is "+ temp);
                     break;
                 case 3:
-                    System.out.println("bye");
+                    System.out.println("Goodbye!");
                     run = false;
                     break;
             }
