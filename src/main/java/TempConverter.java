@@ -27,12 +27,14 @@ public class TempConverter {
                 case 1:
                     System.out.print("\nEnter the Temp in fahrenheit:  ");
                     temp = sc.nextDouble();
+                    System.out.println("\nThe fahrenheit is "+ temp);
                     temp = (temp-32)*((double)5/9);
                     System.out.println("\nThe celsius is "+ temp);
                     break;
                 case 2:
                     System.out.print("\nEnter the Temp in celsius:  ");
                     temp = sc.nextDouble();
+                    System.out.println("\nThe celsius is "+ temp);
                     temp = (temp*((double)9/5)+32);
                     System.out.println("\nThe fahrenheit is "+ temp);
                     break;
