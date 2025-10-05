@@ -16,27 +16,29 @@ public class TempConverter {
         run = true;
         while (run){
             System.out.println("\n----menu----");
-            System.out.println("1. F to C");
-            System.out.println("2. C to F");
-            System.out.println("3. exit");
-            System.out.print("\nEnter your choice:  ");
+            System.out.println("1. Convert Fahrenheit to Celsius");
+            System.out.println("2. Convert Celsius to Fahrenheit");
+            System.out.println("3. Exit");
+            System.out.print("\nEnter your choice(1, 2, 3):  ");
             int choice = sc.nextInt();
 
             switch (choice)
             {
                 case 1:
-                    System.out.print("\nEnter the Temp in fahrenheit:  ");
+                    System.out.print("Enter the temperature in Fahrenheit: ");
                     temp = sc.nextDouble();
-                    System.out.println("\nThe fahrenheit is "+ temp);
+                    System.out.println("\nConversion Results:");
+                    System.out.println("Fahrenheit: "+ temp);
                     temp = (temp-32)*((double)5/9);
-                    System.out.println("The celsius is "+ temp);
+                    System.out.println("Celsius: "+ temp);
                     break;
                 case 2:
-                    System.out.print("\nEnter the Temp in celsius:  ");
+                    System.out.print("Enter the temperature in Celsius: ");
                     temp = sc.nextDouble();
-                    System.out.println("The celsius is "+ temp);
+                    System.out.println("\nConversion Results:");
+                    System.out.println("Celsius: "+ temp);
                     temp = temp*((double)9/5)+32;
-                    System.out.println("\nThe fahrenheit is "+ temp);
+                    System.out.println("Fahrenheit: "+ temp);
                     break;
                 case 3:
                     System.out.println("Goodbye!");
