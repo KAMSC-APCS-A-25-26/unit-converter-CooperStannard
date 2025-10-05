@@ -14,11 +14,11 @@ public class DistanceConverter {
 
         run = true;
         while (run){
-            System.out.println("----menu----");
+            System.out.println("\n----menu----");
             System.out.println("1. Miles to kilometers");
             System.out.println("2. Kilometers to miles");
             System.out.println("3. exit");
-            System.out.print("Enter your choice:  ");
+            System.out.print("\nEnter your choice:  ");
             int choice = sc.nextInt();
 
             switch (choice)
@@ -26,17 +26,19 @@ public class DistanceConverter {
                 case 1:
                     System.out.print("\nEnter the distance in miles:  ");
                     distance = sc.nextDouble();
+                    System.out.println("\nThe miles is "+ distance);
                     distance *= 1.60935;
-                    System.out.println("\nThe kilometers is "+ distance);
+                    System.out.println("The kilometers is "+ distance);
                     break;
                 case 2:
                     System.out.print("\nEnter the distance in kilometers:  ");
                     distance = sc.nextDouble();
+                    System.out.println("\nThe kilometers is "+ distance);
                     distance /= 1.60935;
-                    System.out.println("\nThe miles is "+ distance);
+                    System.out.println("The miles is "+ distance);
                     break;
                 case 3:
-                    System.out.println("bye");
+                    System.out.println("Goodbye!");
                     run = false;
                     break;
             }
