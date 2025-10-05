@@ -10,7 +10,7 @@ public class TimeConverter {
         int hour, second, minute, time;
         boolean run = true;
         Scanner sc = new Scanner(System.in);
-        while (run = true){
+        while (run == true){
         System.out.println("convert time to total seconds\n");
         System.out.print("\nEnter hours: ");
         hour = sc.nextInt();
@@ -28,10 +28,11 @@ public class TimeConverter {
         System.out.println(second + " seconds = "+ second +" seconds");
         System.out.println("\nTotal: " + time);
 
-        System.out.println("do you want to run the program again(y/n): ");
-        char runAgain = sc.next();
-        if (runAgain != "y")
+        System.out.print("do you want to run the program again(y/n): ");
+        char runAgain = sc.next().charAt(0);
+        if (runAgain != 'y')
         {
+        System.out.println("bye");
         run = false;
         }
 
