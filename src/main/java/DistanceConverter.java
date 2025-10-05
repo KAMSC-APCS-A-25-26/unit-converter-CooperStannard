@@ -24,16 +24,18 @@ public class DistanceConverter {
             switch (choice)
             {
                 case 1:
-                    System.out.print("\nEnter the distance in miles:  ");
+                    System.out.print("Enter the distance in miles:  ");
                     distance = sc.nextDouble();
-                    System.out.println("\nThe miles is "+ distance);
+                    System.out.println("\nConversion results: ");
+                    System.out.println("The miles is "+ distance);
                     distance *= 1.60935;
                     System.out.println("The kilometers is "+ distance);
                     break;
                 case 2:
-                    System.out.print("\nEnter the distance in kilometers:  ");
+                    System.out.print("Enter the distance in kilometers:  ");
                     distance = sc.nextDouble();
-                    System.out.println("\nThe kilometers is "+ distance);
+                    System.out.println("\nConversion results: ");
+                    System.out.println("The kilometers is "+ distance);
                     distance /= 1.60935;
                     System.out.println("The miles is "+ distance);
                     break;
